@@ -1,0 +1,215 @@
+:root {
+    --bs-body-bg: #111827;
+    --bs-body-color: #f3f4f6;
+    --sidebar-width: 250px;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #111827;
+    border-bottom: 1px solid #1f2937;
+    z-index: 1030;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: #111827;
+    border-right: 1px solid #1f2937;
+    padding-top: 56px;
+    overflow-y: auto;
+    z-index: 1020;
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+}
+
+.page-banner {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.banner-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgba(37, 99, 235, 0.4);
+    color: #93c5fd;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: #9ca3af;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    margin: 0.25rem 0.5rem;
+    transition: all 0.2s;
+}
+
+.sidebar-link:hover {
+    background-color: #1f2937;
+    color: #f3f4f6;
+}
+
+.sidebar-link.active {
+    background-color: rgba(37, 99, 235, 0.4);
+    color: #93c5fd;
+}
+
+.sidebar-link i {
+    margin-right: 0.75rem;
+}
+
+.club-card {
+    background-color: #1f2937;
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.club-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2);
+}
+
+.club-card-header {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.club-logo {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 0.5rem;
+    backdrop-filter: blur(4px);
+}
+
+.club-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.club-blue {
+    background-color: #1E40AF;
+}
+
+.club-green {
+    background-color: #15803D;
+}
+
+.club-red {
+    background-color: #B91C1C;
+}
+
+.club-purple {
+    background-color: #7E22CE;
+}
+
+.club-orange {
+    background-color: #C2410C;
+}
+
+.club-card-body {
+    padding: 1rem 1.5rem;
+    flex-grow: 1;
+}
+
+.club-card-footer {
+    background-color: rgba(31, 41, 55, 0.5);
+    border-top: 1px solid #374151;
+    padding: 1rem;
+}
+
+.badge-outline {
+    border: 1px solid #4b5563;
+    background-color: transparent;
+    color: #9ca3af;
+}
+
+.badge-recruiting {
+    background-color: #15803D;
+    color: white;
+}
+
+.btn-rounded-icon {
+    border-radius: 9999px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    position: relative;
+    max-width: 400px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+}
+
+.search-input {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: white;
+    padding-left: 2.5rem;
+}
+
+.search-input:focus {
+    background-color: #1f2937;
+    border-color: #4b5563;
+    color: white;
+    box-shadow: none;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.65rem;
+    width: 18px;
+    height: 18px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}

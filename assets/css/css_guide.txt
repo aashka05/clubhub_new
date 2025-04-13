@@ -1,0 +1,16 @@
+root - colors
+dark - dark theme colors
+base
+button style
+card style
+badge style
+text style
+section style
+navbar style - navbar, logo, navlink, mobile navbar
+hero section
+animation section
+about section
+club section
+event section
+contact section
+footer section
